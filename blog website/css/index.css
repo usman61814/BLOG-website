@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: math;
+}
+
+
+header {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(120, 57, 175, 0.737);
+    padding: .3rem 10%;
+    top: 0;
+    left: 0;
+}
+
+header img {
+    height: 100px;
+    width: 100px;
+}
+
+.navbar a {
+    font-size: 1.15rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+}
+
+.navbar a:hover {
+    padding-left: 2px;
+    color: rgba(120, 57, 175, 0.737);
+    
+}
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+
+.mySlides {
+    display: none;
+}
+
+.text {
+    margin-bottom: 10px;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 15rem;
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.slideshow-container button {
+    color: white;
+    border: rgba(120, 57, 175, 0.737);
+    background-color: rgba(120, 57, 175, 0.737);
+    border-radius: 10px;
+    position: relative;
+    left: 45%;
+    bottom: 7rem;
+    margin-top: 1rem;
+    padding: 13px 5px;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* card section */
+
+.card_section {
+    display: -webkit-inline-box;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
+    padding: 9rem;
+    background-color: white;
+    gap: 133px;
+    background-color: whitesmoke;
+}
+
+
+.card {
+    border: 2px solid black;
+    height: 20rem;
+    width: 20rem;
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    border-color: rgba(120, 57, 175, 0.737);
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+    background-color: rgba(120, 57, 175, 0.337);
+    transform: translateY(20px);
+}
+
+.card h3 {
+    font-size: 2rem;
+}
+
+.card a {
+    text-decoration: none;
+    color: rgba(120, 57, 175, 0.737);
+}
+
+.card a:hover {
+    color: rgba(120, 57, 175, 0.337);
+}
+
+.card_heading h2 {
+    display: inline-block;
+    position: absolute;
+    right: 52rem;
+    bottom: 5rem;
+}
+
+/* notice section */
+.notice_section {
+    display: flex;
+    margin-top: -100px;
+    padding: 9rem;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.notice_pic {
+    padding: 0rem;
+}
+
+.notice_para {
+    background-color: #fff;
+    border: 1px solid rgba(120, 57, 175, 0.737);
+    height: 33rem;
+    width: 35rem;
+    left: 50rem;
+    position: absolute;
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.notice_para h3 {
+    font-size: x-large;
+    margin-bottom: 3rem;
+}
+
+.button {
+    display: flex;
+    padding-top: 3rem;
+    gap: 10px;
+}
+
+button {
+    border-color: white;
+    display: flex;
+    height: 3rem;
+    width: 8rem;
+    text-decoration: none;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+#login {
+    background-color: rgba(120, 57, 175, 0.337);
+    border-color: white;
+    transition: 0.1s ease-in;
+}
+
+#login:hover {
+    background-color: white;
+    border-color: rgba(120, 57, 175, 0.337);
+    transform: translateY(2px);
+}
+
+#start {
+    background-color: white;
+    transition: 0.1s ease-in;
+    border-color: rgba(120, 57, 175, 0.337);
+}
+
+#start:hover {
+    background-color: rgba(120, 57, 175, 0.337);
+    border-color: white;
+    transform: translateY(2px);
+}
+
+/* blog link section */
+.blog {
+    display: flex;
+    margin-top: -100px;
+    padding: 9rem;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.blog_pic {
+    padding: 0rem;
+}
+
+.blog_pic img {
+    height: 27rem;
+    position: relative;
+    right: -23rem;
+}
+
+.blog_para {
+    background-color: #fff;
+    border: 1px solid rgba(120, 57, 175, 0.737);
+    height: 30rem;
+    width: 35rem;
+    left: 9rem;
+    position: absolute;
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog_para h3 {
+    font-size: x-large;
+    margin-bottom: 3rem;
+}
+
+.button {
+    display: flex;
+    padding-top: 3rem;
+    gap: 10px;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+.button #start {
+    background-color: rgba(254, 253, 255, 0.768);
+    transition: 0.1s ease-in;
+    border-color: rgba(120, 57, 175, 0.337);
+}
+
+.button #start:hover {
+    background-color: rgba(120, 57, 175, 0.337);
+    border-color: white;
+    transform: translateY(2px);
+}
+
+/* footer */
+
+.footer_container {
+    display: flex;
+    padding: 7rem;
+    gap: 254px;
+    align-items: center;
+    border: 1px solid rgba(120, 57, 175, 0.737)
+}
+
+ul {
+    list-style: none;
+    grid-template-columns: 20px;
+}
+
+li {
+    padding: 5px;
+    transition: .3s ease-in-out;
+}
+
+li:hover {
+    padding-left: 2px;
+    color: rgba(120, 57, 175, 0.737);
+    background-color: rgba(120, 57, 175, 0.337);
+}
+
+.last_para{
+    padding-left: 32rem;
+    background-color: rgba(120, 57, 175, 0.337);
+}

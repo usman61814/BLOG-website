@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Personal | Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: math;
+        }
+
+        header {
+            height: 75px;
+            display: flex;
+            /* position: sticky; */
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(120, 57, 175, 0.737);
+            padding: .3rem 10%;
+            top: 0;
+            left: 0;
+        }
+
+        header img {
+            height: 100px;
+            width: 100px;
+        }
+
+        .navbar a {
+            font-size: 1.15rem;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 2.5rem;
+        }
+
+        .navbar a:hover {
+            padding-left: 2px;
+            color: rgba(120, 57, 175, 0.737);
+        }
+
+        /* footer */
+        .footer_container {
+            display: flex;
+            padding: 7rem;
+            gap: 254px;
+            align-items: center;
+            border: 1px solid rgba(120, 57, 175, 0.737)
+        }
+
+        ul {
+            list-style: none;
+            grid-template-columns: 20px;
+        }
+
+        li {
+            padding: 5px;
+            transition: .3s ease-in-out;
+        }
+
+        li:hover {
+            padding-left: 2px;
+            color: rgba(120, 57, 175, 0.737);
+            background-color: rgba(120, 57, 175, 0.337);
+        }
+
+        .last_para {
+            padding-left: 32rem;
+            background-color: rgba(120, 57, 175, 0.337);
+        }
+
+        /* slide section */
+        .slider {
+            display: flex;
+            margin-bottom: 4rem;
+        }
+
+        .mySlides img {
+            height: 382px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .left_section {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            width: 35rem;
+            left: 12rem;
+            margin-top: 10rem;
+            height: 24rem;
+            background-color: rgba(120, 57, 175, 0.337);
+            padding: 10rem;
+            transition: .3s ease-in-out;
+        }
+
+        .left_section:hover {
+            transform: translateX(10rem);
+            box-shadow: -7px 9px 4px rgba(120, 57, 175, 0.137);
+        }
+
+        .left_section h4 {
+            color: black;
+            font-weight: 400;
+        }
+
+        .left_section h2 {
+            color: rgba(120, 57, 175, 0.737);
+        }
+
+        .right_section {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            width: 35rem;
+            left: 12rem;
+            margin-top: 10rem;
+            height: 24rem;
+        }
+
+        .text {
+            position: relative;
+            bottom: 17rem;
+            padding: 3.2rem;
+            color: black;
+            font-weight: 600;
+        }
+
+        .blogs {
+            display: flex;
+            margin-bottom: -64px;
+        }
+
+        .blogs a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .blog_1 {
+            padding: 3rem;
+            margin: 30px;
+        }
+
+        .img{
+            background-color: rgba(120, 57, 175, 0.337);
+        }
+
+        .img img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: top;
+            transition: .4s ease-in-out;
+        }
+
+        .img img:hover{
+           transform: translate(1rem ,-1rem);
+        }
+
+        .heading {
+            padding-top: 35px;
+        }
+
+        .heading h3 {
+            padding-bottom: 20px;
+            color: rgba(120, 57, 175, 0.737);
+        }
+
+        .heading p {
+            padding-bottom: 20px;
+        }
+
+        .publish_date{
+            padding-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <img class="logo" src="/imgs/logo.img.png" alt="">
+        <nav class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="/blogpage/blog.html">Blog</a>
+            <a href="/contactpage/contactus.html">Contact Us</a>
+        </nav>
+    </header>
+    <!-- slideshow -->
+    <section class="slider">
+        <div class="left_section">
+            <h4>Creater Blog</h4>
+            <h2>Featured articles</h2>
+        </div>
+        <div class="right_section">
+            <div class="slider">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="/imgs/slider.jpg" style="width:100%">
+                        <div class="text">The key is, no matter what story you tell, make your buyer the hero.”
+                            <em>Chris
+                                Brogan</em>
+                        </div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="/imgs/slider1.jpg" style="width:100%">
+                        <div class="text">The key is, no matter what story you tell, make your buyer the hero.”
+                            <em>Chris
+                                Brogan</em>
+                        </div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="/imgs/slider2.jpg" style="width:100%">
+                        <div class="text">The key is, no matter what story you tell, make your buyer the hero.”
+                            <em>Chris
+                                Brogan</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blog_section">
+        <div class="blogs">
+            <a href="#">
+                <div class="blog_1">
+                    <div class="img">
+                        <img src="/10.jpg" alt="">
+                    </div>
+                    <div class="heading">
+                        <h3>Announcements</h3>
+                        <p>How to continue succeeding with video on youtube</p>
+                        <p class="publish_date">3 April 2024</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="blog_1">
+                    <div class="img">
+                        <img src="/10.jpg" alt="">
+                    </div>
+                    <div class="heading">
+                        <h3>Announcements</h3>
+                        <p>How to continue succeeding with video on youtube</p>
+                        <p class="publish_date">3 April 2024</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="blog_1">
+                    <div class="img">
+                        <img src="/10.jpg" alt="">
+                    </div>
+                    <div class="heading">
+                        <h3>Announcements</h3>
+                        <p>How to continue succeeding with video on youtube</p>
+                        <p class="publish_date">3 April 2024</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section class="blog_section">
+        <div class="blogs">
+            <a href="#">
+                <div class="blog_1">
+                    <div class="img">
+                        <img src="/imgs/2.jpg" alt="">
+                    </div>
+                    <div class="heading">
+                        <h3>Announcements</h3>
+                        <p>How to continue succeeding with video on youtube</p>
+                        <p class="publish_date">3 April 2024</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="blog_1">
+                    <div class="img">
+                        <img src="/imgs/1.jpg" alt="">
+                    </div>
+                    <div class="heading">
+                        <h3>Announcements</h3>
+                        <p>How to continue succeeding with video on youtube</p>
+                        <p class="publish_date">3 April 2024</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="blog_1">
+                    <div class="img">
+                        <img src="/imgs/3.jpg" alt="">
+                    </div>
+                    <div class="heading">
+                        <h3>Announcements</h3>
+                        <p>How to continue succeeding with video on youtube</p>
+                        <p class="publish_date">3 April 2024</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_container">
+            <div class="row">
+                <ul>
+
+                    <img src="/imgs/logo.img.png" alt="logo" style="height: 100px;
+                        width: 100px; background-color: black;">
+
+                    <li style="font-size: larger; font-weight: 500;">
+                        Follow Us
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul>
+                    <li style="font-size: larger; font-weight: 500;">
+                        Create Blog
+                    </li>
+                    <li>
+                        Pages and profile
+                    </li>
+                    <li>Professional dashboard</li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul>
+                    <li style="font-size: larger; font-weight: 500;">
+                        Stay Safe
+                    </li>
+                    <li>
+                        Grow
+                    </li>
+                    <li>Groups</li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul>
+                    <li style="font-size: larger; font-weight: 500;">
+                        Blog
+                    </li>
+                    <li>Earn money</li>
+                    <li>
+                        Write For Us
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="last_para">
+            <p>&copy; 2024 Chaudhary Brothers & company. All rights Reserved</p>
+        </div>
+    </footer>
+</body>
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+</script>
+
+</html>

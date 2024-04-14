@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Personal | Blog</title>
+    <style>
+        body{
+            background-color: whitesmoke;
+            background-image: url(/thomas-lefebvre-gp8BLyaTaA0-unsplash.jpg);
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid rgba(120, 57, 175, 0.137);
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 20px;
+            resize: vertical
+            
+        }
+
+        input[type=submit] {
+            background-color: rgba(120, 57, 175, 0.737);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: rgba(120, 57, 175, 0.337);
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            margin: 10rem;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            height: 33rem;
+            width: 28rem;
+            border: 1px solid rgba(120, 57, 175, 0.737);
+            right: -23rem;
+        }
+
+        #fname{
+            margin-bottom: 20px;
+        }
+        #lname{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <img class="logo" src="/imgs/logo.img.png" alt="">
+        <nav class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="/blogpage/blog.html">Blog</a>
+            <a href="/contactpage/contactus.html">Contact Us</a>
+        </nav>
+    </header>
+    <!-- contact us form -->
+    <div class="container">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="2fbe8b1b-d1c3-4202-8b6b-f6cc9605b6f2">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Email</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="footer_container">
+            <div class="row">
+                <ul>
+
+                    <img src="/imgs/logo.img.png" alt="logo" style="height: 100px;
+                        width: 100px; background-color: black;">
+
+                    <li style="font-size: larger; font-weight: 500;">
+                        Follow Us
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul>
+                    <li style="font-size: larger; font-weight: 500;">
+                        Create Blog
+                    </li>
+                    <li>
+                        Pages and profile
+                    </li>
+                    <li>Professional dashboard</li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul>
+                    <li style="font-size: larger; font-weight: 500;">
+                        Stay Safe
+                    </li>
+                    <li>
+                        Grow
+                    </li>
+                    <li>Groups</li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul>
+                    <li style="font-size: larger; font-weight: 500;">
+                        Blog
+                    </li>
+                    <li>Earn money</li>
+                    <li>
+                        Write For Us
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="last_para">
+            <p>&copy; 2024 Chaudhary Brothers & company. All rights Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>
